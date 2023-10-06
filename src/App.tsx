@@ -1,8 +1,13 @@
+import NavBar from "./components/NavBar";
+
 function App() {
   return (
     <>
-      <h1 className="text-slate-800 text-5xl font-bold ">Hey</h1>
-      <button className="btn btn-secondary">One</button>
+      <NavBar />
+      <div className="md:grid grid-flow-col ">
+        <aside className="bg-slate-600">aside</aside>
+        <main className="bg-sky-400">main</main>
+      </div>
     </>
   );
 }
