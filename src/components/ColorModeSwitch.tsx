@@ -6,7 +6,7 @@ const ColorModeSwitch = () => {
   useEffect(() => {
     document.documentElement.setAttribute(
       "data-theme",
-      darkColorMode ? "dark" : "light"
+      darkColorMode ? "night" : "cupcake"
     );
   }, [darkColorMode]);
 
