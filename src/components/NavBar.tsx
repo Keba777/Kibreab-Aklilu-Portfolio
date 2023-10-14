@@ -6,23 +6,21 @@ const NavBar = () => {
       <div className="navbar-start">
         <a className="btn btn-ghost normal-case text-xl">Kibreab</a>
       </div>
-      <div className="navbar-center hidden  md:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>About</a>
-          </li>
-          <li>
-            <a>Skills</a>
-          </li>
-          <li>
-            <a>Projects</a>
-          </li>
-          <li>
-            <a>Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div className="navbar-end">
+      <ul className="menu menu-horizontal  flex space-x-6 navbar-center">
+        <li>
+          <a>About</a>
+        </li>
+        <li>
+          <a>Skills</a>
+        </li>
+        <li>
+          <a>Projects</a>
+        </li>
+        <li>
+          <a>Contact</a>
+        </li>
+      </ul>
+      <div className="navbar-end pe-6">
         <ColorModeSwitch />
       </div>
     </div>
