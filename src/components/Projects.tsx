@@ -4,6 +4,10 @@ const Projects = () => {
   return (
     <div className="p-4 flex gap-6">
       <ProjectCard
+        title="ElectroHub"
+        details="The Mern Stack E-Commerce App which is used to sell electronics of different type. It has the functionality to add to carts and filter products as well as to search the products."
+      />
+      <ProjectCard
         title="A2sv Success Stories Page Clone"
         children={<button className="btn btn-neutral">View</button>}
         details="In this project, I cloned a web application that showcases success stories of A2SVians and presents growth statistics for A2SV. Users can view impact stories and gain insights into the growth of A2SV through the provided graphs."
