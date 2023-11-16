@@ -6,9 +6,18 @@ interface Prop {
   details: string;
   image: string;
   children?: ReactNode;
+  gitHubLink?: string;
+  viewLink?: string;
 }
 
-const ProjectCard = ({ title, details, image, children }: Prop) => {
+const ProjectCard = ({
+  title,
+  details,
+  image,
+  children,
+  gitHubLink,
+  viewLink,
+}: Prop) => {
   return (
     <div className="card  bg-base-200 shadow-2xl border-slate-800 border-2">
       <figure>
@@ -20,12 +29,15 @@ const ProjectCard = ({ title, details, image, children }: Prop) => {
         <div className="card-actions justify-between">
           {children}
           <div className="justify-end flex space-x-4">
-            <a href="">
+            <a href={gitHubLink} className="cursor-pointer">
               <BsGithub className="w-5 h-5" />
             </a>
-            <button className="btn-xs btn-secondary font-semibold px-3 rounded-xl">
+            <a
+              href={viewLink}
+              className="btn-xs btn-secondary font-semibold px-3 rounded-xl cursor-pointer pt-1"
+            >
               View
-            </button>
+            </a>
           </div>
         </div>
       </div>

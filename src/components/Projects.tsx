@@ -6,20 +6,19 @@ import ChatMeImage from "../assets/Chat.jpg";
 import { FaReact } from "react-icons/fa";
 
 import {
-  SiNextdotjs,
   SiExpress,
   SiNodedotjs,
   SiMongodb,
-  SiFirebase,
   SiTypescript,
   SiTailwindcss,
-  SiDaisyui,
 } from "react-icons/si";
 
 const Projects = () => {
   return (
     <div className="my-10 mx-6">
-      <h2 className="text-4xl font-bold text-center m-6">Some of My Projects</h2>
+      <h2 className="text-4xl font-bold text-center m-6">
+        Some of My Projects
+      </h2>
       <div className="p-4 grid md:grid-cols-2 gap-10">
         <ProjectCard
           title="ElectroHub"
@@ -38,6 +37,8 @@ const Projects = () => {
         <ProjectCard
           title="A2sv Success Stories Page Clone"
           image={ASImage}
+          gitHubLink="https://github.com/Keba777/A2sv-success-stories-page-clone"
+          viewLink="https://a2sv-success-stories-page-clone.vercel.app/"
           children={
             <span className="flex space-x-3">
               <FaReact color="#00D8FF" className="w-5 h-5" />
@@ -50,6 +51,8 @@ const Projects = () => {
         <ProjectCard
           title="React Typescript Todo List App"
           image={TodoImage}
+          gitHubLink="https://github.com/Keba777/A2sv-React-Typescript-Todo-List-Task"
+          viewLink="https://a2sv-react-typescript-todo-list-task.vercel.app/"
           children={
             <span className="flex space-x-3">
               <FaReact color="#00D8FF" className="w-5 h-5" />
@@ -63,6 +66,7 @@ const Projects = () => {
         <ProjectCard
           title="Chat Me"
           image={ChatMeImage}
+          gitHubLink="https://github.com/Keba777/Chat-Me"
           children={
             <span className="flex space-x-3">
               <FaReact color="#00D8FF" className="w-5 h-5" />
@@ -72,14 +76,6 @@ const Projects = () => {
           }
           details="A real-time chat application designed for seamless communication. Built with React on the frontend and powered by a Node.js server with Socket.io, this project provides users with a live chat experience in designated rooms. "
         />
-
-        {/*
-      <ProjectCard
-        title="Next.js Firebase FullStack Blog App"
-        details="This project involves a Next.js application for managing personal blogs, integrating Firebase for backend operations like data storage and retrieval. Users can edit, delete, and add blog data. The App router ensures smooth navigation across various application routes."
-      />
-      
-       */}
       </div>
     </div>
   );
