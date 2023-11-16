@@ -15,10 +15,7 @@ const ProjectCard = ({ title, details, image, children }: Prop) => {
         <img src={image} alt="Shoes" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">
-          {title}
-          <div className="badge badge-secondary">NEW</div>
-        </h2>
+        <h2 className="card-title">{title}</h2>
         <p>{details}</p>
         <div className="card-actions justify-between">
           {children}
@@ -33,16 +30,6 @@ const ProjectCard = ({ title, details, image, children }: Prop) => {
         </div>
       </div>
     </div>
-    // <div className="card w-96 bg-base-300 shadow-xl">
-    //   <div className="card-body">
-    //     <h2 className="card-title">{title}</h2>
-    //     <p className="text-sm text-justify">{details}</p>
-    //     <span className="card-actions justify-end">
-    //       {children}
-    //       <BsGithub className="w-8 h-8" />
-    //     </span>
-    //   </div>
-    // </div>
   );
 };
 

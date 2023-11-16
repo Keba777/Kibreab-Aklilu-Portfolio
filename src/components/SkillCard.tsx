@@ -7,10 +7,10 @@ interface Props {
 
 const SkillCard = ({ icon, heading }: Props) => {
   return (
-    <div className="card w-32 bg-base-200 shadow-xl">
+    <div className="card w-20 md:w-24 lg:w-28 bg-base-200 shadow-xl">
       <figure className="px-4 pt-4">{icon}</figure>
-      <div className="card-body items-center text-center">
-        <h2 className="card-title">{heading}</h2>
+      <div className="py-5 sm:py-6 md:py-7 lg:py-9 card-body items-center  text-center">
+        <h2 className="card-title text-sm md:text-lg">{heading}</h2>
       </div>
     </div>
   );
