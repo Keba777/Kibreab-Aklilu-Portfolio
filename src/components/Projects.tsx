@@ -15,7 +15,7 @@ import {
 
 const Projects = () => {
   return (
-    <div className="my-10 mx-6">
+    <div id="projects" className="my-10 mx-6">
       <h2 className="text-4xl font-bold text-center m-6">
         Some of My Projects
       </h2>

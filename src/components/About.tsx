@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <div className="flex justify-center my-6">
         <div className="stats shadow ">
           <div className="stat animate-pulse">

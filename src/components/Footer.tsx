@@ -3,7 +3,7 @@ import { BiLogoGmail } from "react-icons/bi";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-10 bg-base-200">
+    <footer id="contact" className="footer footer-center p-10 bg-base-200">
       <aside>
         <p>Copyright © 2023 - All right reserved</p>
       </aside>

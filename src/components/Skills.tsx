@@ -33,7 +33,7 @@ const commonCardClass =
 
 const Skills = () => {
   return (
-    <div className="mx-2 my-10">
+    <div id="skills" className="mx-2 my-10">
       <h1 className="text-center text-4xl font-bold">My Skills</h1>
       <br />
       <div className="lg:mx-4 mb-10">

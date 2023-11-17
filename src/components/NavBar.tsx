@@ -1,10 +1,18 @@
+import { animateScroll as scroll } from "react-scroll";
 import ColorModeSwitch from "./ColorModeSwitch";
+import NavItems from "./NavItems";
 
 const NavBar = () => {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <div className="navbar p-3">
       <div className="hidden md:flex navbar-start">
-        <a className="btn btn-ghost normal-case text-xl">Home</a>
+        <a onClick={scrollToTop} className="btn btn-ghost normal-case text-xl">
+          Home
+        </a>
       </div>
 
       <div className="dropdown navbar-start">
@@ -27,34 +35,12 @@ const NavBar = () => {
           tabIndex={0}
           className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box "
         >
-          <li>
-            <a>About</a>
-          </li>
-          <li>
-            <a>Skills</a>
-          </li>
-          <li>
-            <a>Projects</a>
-          </li>
-          <li>
-            <a>Contact</a>
-          </li>
+          <NavItems />
         </ul>
       </div>
 
-      <ul className="menu hidden md:menu-horizontal md:space-x-3   lg:space-x-6 navbar-center">
-        <li>
-          <a>About</a>
-        </li>
-        <li>
-          <a>Skills</a>
-        </li>
-        <li>
-          <a>Projects</a>
-        </li>
-        <li>
-          <a>Contact</a>
-        </li>
+      <ul className="menu hidden md:menu-horizontal md:space-x-3 lg:space-x-6 navbar-center">
+        <NavItems />
       </ul>
 
       <div className="navbar-end pe-6">

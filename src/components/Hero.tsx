@@ -2,7 +2,10 @@ import Profile from "../assets/profile.jpg";
 
 const Hero = () => {
   return (
-    <div className="hero min-h-screen bg-base-200  px-3 md:px-6 lg:px-28">
+    <div
+      id="hero"
+      className="hero min-h-screen bg-base-200  px-3 md:px-6 lg:px-28"
+    >
       <div className="hero-content flex-col md:flex-row">
         <img
           src={Profile}
